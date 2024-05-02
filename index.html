@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="./index.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <link rel="stylesheet" href="./style.css" />
+        <title>Fetch</title>
+    </head>
+    <body>
+        <label for="postNumber">Post ID:</label>
+
+        <input
+            type="number"
+            id="post-number"
+            name="postNumber"
+            required
+            placeholder="Input Post ID"
+        />
+        <button type="button" id="req-sub">SUBMIT</button>
+        <div id="content-wrapper">
+            <div class="postSection">
+                <h2 id="postTitle"></h2>
+                <p id="postBody"></p>
+            </div>
+
+            <div class="commentSection"></div>
+        </div>
+    </body>
+</html>
